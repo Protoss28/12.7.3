@@ -1,0 +1,14 @@
+cash = int(input('Сумма вклада '))
+
+TKB = int(cash * 5.6 / 100)
+SKB = int(cash * 5.9 / 100)
+VTB = int(cash * 4.28 / 100)
+SBER = int(cash * 4.0 / 100)
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+TKB = int(cash * per_cent.get('ТКБ') / 100)
+SKB = int(cash * per_cent.get('СКБ') / 100)
+VTB = int(cash * per_cent.get('ВТБ') / 100)
+SBER = int(cash * per_cent.get('СБЕР') / 100)
+print ('Депозит ТКБ =',TKB, '\nДепозит СКБ =', SKB, '\nДепозит ВТБ =', VTB, '\nДепозит СБЕР =', SBER)
+
+deposit = [TKB, SKB, VTB, SBER]
